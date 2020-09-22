@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCL-Tb4tvLIgDok6_nAEg5vn5NleNnBUb4",
+            authDomain: "gup-shup-chat.firebaseapp.com",
+            databaseURL: "https://gup-shup-chat.firebaseio.com",
+            projectId: "gup-shup-chat",
+            storageBucket: "gup-shup-chat.appspot.com",
+            messagingSenderId: "791588449020",
+            appId: "1:791588449020:web:8bf1d7672ecf07a4a54579",
+            measurementId: "G-DKFPK355YE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <div class="forCenter">
+        <div id="main-Content">
+
+            <div class="messages">
+                <div id="headerTwo">
+                    <div class="mixture">
+                        <img src="" width="40px" height="40px" id="img">
+                        <p id="name">............</p>
+                    </div>
+
+                    <div id="fbBtnDiv">
+                        <button id="fbBtn" onclick="none()">Facebook Login</button>
+                    </div>
+                    <ul class="ul">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-item" id="logout" onclick="logout()">Logout</div>
+                        </div>
+                      </li>
+                      </ul>
+
+                    <!-- <div>
+                        <div id="logout" onclick="logout()">Logout</div>
+                    </div> -->
+                </div>
+                <div id="all-messages">
+
+
+
+
+
+                </div>
+                <hr>
+                <div class="MessageDiv">
+                    <!-- <div id="typeMessageDiv"> -->
+                    <input type="text" name="typeMessage" id="typeMessage" placeholder="Type Message">
+                    <img src="images/send.png" class="sendBtn" onclick="sendMsg()" width="35px">
+                    <!-- </div> -->
+                    <!-- <button id="sendMessageBtn">Send</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
